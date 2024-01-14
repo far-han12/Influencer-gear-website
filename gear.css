@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 *{
-    margin: 0;
+    margin-left: 0;
 }
 /* nav section */
 
@@ -114,7 +114,7 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    justify-content: center;
+    /* justify-content: center; */
     gap: 30px;
     padding-left: 120px;
     /* margin-right: 120px; */
@@ -146,7 +146,7 @@ font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 40px; /* 142.857% */
+line-height: 30px; /* 142.857% */
 
 }
 
@@ -156,11 +156,91 @@ line-height: 40px; /* 142.857% */
     text-align: right;
     padding-right: 100px;
 }
+/* feature section */
+.fm{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.feature{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.feature-img img{
+    width: 404px;
+    height: 270px;
+    
+}
+.feature-text{color: #6C6C6C;
+    /* font-feature-settings: 'clig' off, 'liga' off; */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+    margin-left: 0;
+    padding-left: 0;
+    width: 501px;
+height: 88px;
 
 
+}
+.feature-heading{
+    color: #0A0826;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 157.895% */
+}
+.feature-button{
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    background: #E02C6D;
+}
+/* footer */
+footer{
+    /* width:100%; */
+    background: #0A0826;
+    
+height: 239px;
+}
+.footer-head{
+    padding-top:20px ;
+    text-align: center;
+    color: #FFF;
+/* font-feature-settings: 'clig' off, 'liga' off; */
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 
+}
+.footer-text{
+    padding-top: 10px;
+padding-left: 0;
+text-align: center;
+color: var(--Text-Gray-300, #D9DBE1);
+/* font-feature-settings: 'liga' off; */
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+padding-bottom: 10px;
+line-height: 24px; /* 171.429% */
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
-
+}
 
 
 
@@ -223,6 +303,24 @@ align-items: center;
 .seemore{
     text-align: right;
 }
+.feature{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.feature-heading, .feature-text
+{
+    text-align: center;
+}
+.feature-button{
+    display: block;
+margin: auto;
+}
+footer{
+    width: 360px;
+height: 211px;
+
+}
+
 }
 
 
